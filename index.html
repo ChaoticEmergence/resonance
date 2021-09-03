@@ -3,8 +3,17 @@
     <head>
         <meta charset="utf-8"/>
         <title>Resonance</title>
+        <script>
+            function myFunction() {
+              document.getElementById("result").value = +(document.getElementById("feet1").value*0.3048).toFixed(2);
+            }
+            </script>
     </head>
     <body>
-	<p>Yo!</p>
+
+        
+	        <input type="text" id="feet1" name="feet" placeholder="Enter number"/> feet = 
+            <input type="text" id="result" name="result" disabled/> meters
+            <button type="button" onclick="myFunction()">Click</button>
     </body>
 </html>
